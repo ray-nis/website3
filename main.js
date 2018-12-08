@@ -8,3 +8,8 @@ menuIcon.addEventListener("click", ()=> {
     else {
         navList.className = "nav-list";
     }});
+
+
+let navBtn = document.getElementById("nav-btn");
+
+navBtn.addEventListener("click", ()=> {document.getElementById('services').scrollIntoView();})
