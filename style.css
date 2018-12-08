@@ -109,6 +109,9 @@ body {
     background-image: url(img/glenn-carstens-peters-203007-unsplash\ .jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .top-bar {
@@ -145,7 +148,53 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     font-family: Montserrat;
+    font-weight: 250;
 }
+
+.header-text {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-text h3 {
+    color: white;
+    font-weight: 250;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 350;
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.header-text button {
+    width: 240px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #0074D9;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
 
 /* Media Query */
 
@@ -154,6 +203,7 @@ body {
     /* Header */
 
     .header {
+        grid-template-rows: 10vh auto;
         background-image: url(img/glenn-carstens-peters-203007-unsplash-min.jpg);
     }
 
@@ -197,7 +247,7 @@ body {
         margin: 0 auto;
         font-size: 17px;
         text-transform: uppercase;
-        background-color: #fed136;
+        background-color: #0074D9;
         border: none;
         color: white;
         border-radius: 8px;
@@ -205,5 +255,13 @@ body {
 
     .nav-btn i {
         font-size: 15px;
+    }
+
+    .header-text h3 {
+        font-size: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 60px;
     }
 }
