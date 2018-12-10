@@ -27,11 +27,27 @@ function runOnScroll() {
     if (windowY < 350) {
       navHeader.style.height = "10vh";
       document.getElementById("services-link").classList.remove("active-state");
+      document.getElementById("portfolio-link").classList.remove("active-state");
+      document.getElementById("about-link").classList.remove("active-state");
       }
-    else if (windowY > 350) {
+    else if (windowY > 350 && windowY < 800) {
         navHeader.style.height = "7vh";
         document.getElementById("services-link").classList.add("active-state");
+        document.getElementById("portfolio-link").classList.remove("active-state");
+        document.getElementById("about-link").classList.remove("active-state");
     }
- }; 
+    else if (windowY > 800 && windowY < 1300){
+        navHeader.style.height = "7vh";
+        document.getElementById("portfolio-link").classList.add("active-state");
+        document.getElementById("services-link").classList.remove("active-state");
+        document.getElementById("about-link").classList.remove("active-state");
+    }
+    else if (windowY > 1300) {
+        navHeader.style.height = "7vh";
+        document.getElementById("services-link").classList.remove("active-state");
+        document.getElementById("portfolio-link").classList.remove("active-state");
+        document.getElementById("about-link").classList.add("active-state");
+    }
+}; 
 
  window.addEventListener("scroll", runOnScroll);
