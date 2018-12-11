@@ -298,6 +298,38 @@ body {
     margin-top: 200px;
 }
 
+.about-container {
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-row {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+#about-2 {
+    order: 2;
+}
+
+#about-3 {
+    order: 3;
+    text-align: left;
+}
+
+.about-img {
+    width: 150px;
+    height: 150px;
+    border: 10px solid#C0C0C0;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 
 /* Media Query */
 
@@ -389,5 +421,21 @@ body {
 
     .portfolio-img {
         height: auto;
+    }
+
+    /* About */
+
+    .about-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-container {
+        height: 1500px;
+    }
+
+    #about-3 {
+        text-align: center;
+        order: 1;
     }
 }
