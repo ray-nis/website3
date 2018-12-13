@@ -30,6 +30,7 @@ function runOnScroll() {
       document.getElementById("portfolio-link").classList.remove("active-state");
       document.getElementById("about-link").classList.remove("active-state");
       document.getElementById("team-link").classList.remove("active-state");
+      document.getElementById("contact-link").classList.remove("active-state");
       }
     else if (windowY > 350 && windowY < 800) {
         navHeader.style.height = "7vh";
@@ -37,6 +38,7 @@ function runOnScroll() {
         document.getElementById("portfolio-link").classList.remove("active-state");
         document.getElementById("about-link").classList.remove("active-state");
         document.getElementById("team-link").classList.remove("active-state");
+        document.getElementById("contact-link").classList.remove("active-state");
     }
     else if (windowY > 800 && windowY < 1300){
         navHeader.style.height = "7vh";
@@ -44,6 +46,7 @@ function runOnScroll() {
         document.getElementById("services-link").classList.remove("active-state");
         document.getElementById("about-link").classList.remove("active-state");
         document.getElementById("team-link").classList.remove("active-state");
+        document.getElementById("contact-link").classList.remove("active-state");
     }
     else if (windowY > 1300 && windowY < 2200) {
         navHeader.style.height = "7vh";
@@ -51,14 +54,25 @@ function runOnScroll() {
         document.getElementById("portfolio-link").classList.remove("active-state");
         document.getElementById("team-link").classList.remove("active-state");
         document.getElementById("about-link").classList.add("active-state");
+        document.getElementById("contact-link").classList.remove("active-state");
     }
 
-    else if (windowY > 2200) {
+    else if (windowY > 2200 && windowY < 2650) {
         navHeader.style.height = "7vh";
         document.getElementById("services-link").classList.remove("active-state");
         document.getElementById("portfolio-link").classList.remove("active-state");
         document.getElementById("about-link").classList.remove("active-state");
         document.getElementById("team-link").classList.add("active-state");
+        document.getElementById("contact-link").classList.remove("active-state");
+    }
+
+    else if (windowY > 2650) {
+        navHeader.style.height = "7vh";
+        document.getElementById("services-link").classList.remove("active-state");
+        document.getElementById("portfolio-link").classList.remove("active-state");
+        document.getElementById("about-link").classList.remove("active-state");
+        document.getElementById("team-link").classList.remove("active-state");
+        document.getElementById("contact-link").classList.add("active-state");
     }
 }; 
 
